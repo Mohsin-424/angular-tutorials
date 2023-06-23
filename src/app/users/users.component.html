@@ -13,20 +13,22 @@
 <!-- To dislpay a list of users we will use nested routes -->
 <ul class="nav flex-column">
     <li class="nav-item">
-        <a href="" class='nav-link'>Get Mohsin Details</a>
+        <a routerLink="['/users',424,'Mohsin']" class='nav-link' [queryParams]="{page: 1 , search:'Mohsin'}">Get Mohsin Details</a>
     </li>
-</ul>
 
 
 
-<ul class="nav flex-column">
+
+
     <li class="nav-item">
-        <a href="" class='nav-link'>Get Ahmad Details</a>
+        <a routerLink="['/users',421,'Ahmad Anwar']"  class='nav-link'  [queryParams]="{page: 1 , search:'Ahmad'}">Get Ahmad Details</a>
     </li>
-</ul>
 
-<ul class="nav flex-column">
     <li class="nav-item">
-        <a href="" class='nav-link'>Get Usman Details</a>
-    </li>
-</ul>
+        <a routerLink="['/users',420,'Usman']"  class='nav-link'  [queryParams]="{page: 1 , search:'Usman'}">Get Usman Details</a>
+        </li>
+  </ul>
+
+<div>
+    <router-outlet></router-outlet>
+</div>
