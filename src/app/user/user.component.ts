@@ -60,6 +60,18 @@ getMohsinDetails ( ) {
     queryParams:{page:1, search:'Mohsin'},
     fragment: 'loading',
   });
+
+
 }
+// To edit we need to add router
+onUserEdit ( ) {
+this.router.navigate(['/users',this.user.id, this.user.name,'edit'], {
+  queryParamsHandling:'preserve'
+}
+
+);
+    
+}
+  
 }
 

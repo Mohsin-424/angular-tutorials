@@ -18,11 +18,15 @@ const appRoutes: Routes = [
   { path : 'users', 
   // To add path of child user components we il change it like this
   component : UsersComponent,
-children: [{path: ':id/:name' ,component: UserComponent}]
-} ,
-  { path : 'categories' , component:CategoriesComponent} ,
+children: [
+  {path: ':id/:name' ,component: UserComponent},
+ 
+  {path: ':id/:name/edit' ,component: EditUserComponent},],
+},
 
-]
+  { path : 'categories' , component:CategoriesComponent}] ;
+
+
 @NgModule({
   declarations: [
     AppComponent,
