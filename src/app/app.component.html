@@ -4,10 +4,12 @@
       <ul class ="nav flex-column nav-pills"> 
         <!-- Routerlink is used instead of href an anchor tag which prevent the page to reload repeatedly -->
 <li class="nav-item"><a class='nav-link active ' routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Home</a></li>
+<!-- RouterlinkActiveOptions is   -->
+
 
 <li class="nav-item"><a class='nav-link' routerLink="/users" routerLinkActive="active"
  >Users</a></li>
-
+<!-- Router link can be added as property binding -->
 <li class="nav-item"><a class="nav-link active " [routerLink] ="['/categories']" routerLinkActive="active" >Categories</a></li>
       </ul>
     </div>
@@ -17,6 +19,9 @@
       <!-- <app-home></app-home>
       <app-users></app-users>
       <app-categories></app-categories> -->
+
+
+      <!-- To load components dynamically bsed on current router state -->
       <router-outlet></router-outlet>
     </div>
   </div>

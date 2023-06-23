@@ -15,5 +15,14 @@ onCategoriesClick(){
 // Perform some logic to navigate to page
 this.router.navigate(['/categories']);
 // this.router.navigateByUrl('/categories');
+
+
+
+
+
+
+
+
+
 }
 }

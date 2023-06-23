@@ -2,5 +2,31 @@
 <!-- Want to navigate from user to categories  -->
 <div>
     <!-- <a routerLink="/categories">Go to Categories</a> -->
-    <button (click)="onCategoriesClick()">Go to Categories</button>
+    <!-- <button (click)="onCategoriesClick()">Go to Categories</button>
 </div>
+
+
+<a routerLink="['/users',1,'Mohsin']"
+[queryParams]="{page:424, search:'Mohsin'}" 
+[fragment]="'loading'"> Get Mohsin Details</a> -->
+
+<!-- To dislpay a list of users we will use nested routes -->
+<ul class="nav flex-column">
+    <li class="nav-item">
+        <a href="" class='nav-link'>Get Mohsin Details</a>
+    </li>
+</ul>
+
+
+
+<ul class="nav flex-column">
+    <li class="nav-item">
+        <a href="" class='nav-link'>Get Ahmad Details</a>
+    </li>
+</ul>
+
+<ul class="nav flex-column">
+    <li class="nav-item">
+        <a href="" class='nav-link'>Get Usman Details</a>
+    </li>
+</ul>

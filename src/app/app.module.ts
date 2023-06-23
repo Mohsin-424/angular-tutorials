@@ -13,9 +13,10 @@ const appRoutes: Routes = [
   { path : '' , component:HomeComponent} ,
   // To tell the synamic route data
   // { path : 'users/1/leela' , component:UserComponent} ,
-  
+
   { path : 'users/:id/:name' , component:UserComponent} ,
   { path : 'categories' , component:CategoriesComponent} ,
+  
 ]
 @NgModule({
   declarations: [
